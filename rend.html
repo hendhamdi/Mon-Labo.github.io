@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+   <meta charset="utf-8">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="rend.css">
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<script type="text/javascript" ></script>
+     <title>rendevous</title>
+</head>
+<body>
+   <nav ><div class="navim">
+         </div>
+          <div class="mylogo">
+            <a class="logo" href="#"><img src="https://pihda.ci/wp-content/uploads/2020/02/LABORATOIRE-D%E2%80%99ANALYSES-M%C3%89DICALES-27-2048x1665.png" alt="Logo"></a></div>
+
+    <ul class="nav-bar">
+
+       <li ><a href="my lab.html"> Acceuil</a></li> 
+        <li ><a href="#">Mon labo</a></li>
+        <li ><a href="#quest1"> Questions</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+       <li ><a href="#"> Service domicile</a></li>
+        <li ><a href="#spes">Spécialités</a></li>
+        <li ><a href="doclist.html" class="login">trouver labo</a></li>
+        <li ><a href="login.html" ><h4>Login</h4></a> </li> 
+
+    </ul>
+  </nav>
+<!----------------------------------------------------->
+
+
+    <div class="calendar">
+
+      <div class="col leftCol">
+        <div class="content">
+          <h1 class="date">Sunday<span>30 Avril</span></h1>
+          <div class="notes">
+            <p>
+              <input type="text" value="" placeholder="réserver votre rendez vous"/>
+              <a href="#" title="Add note" class="addNote animate">+</a>
+            </p>
+            <p>
+              <input type="text" value="" placeholder="réserver votre rendez vous"/>
+              <a href="#" title="Add note" class="addNote animate">+</a>
+            </p>
+            <ul class="noteList">
+              <li>annuler<a href="#" title="Remove note" class="removeNote animate">x</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col rightCol">
+        <div class="content">
+          <h2 class="year">2023</h2>
+          <ul class="months">
+            <li><a href="#" title="Jan" data-value="1">Jan</a></li>
+            <li><a href="#" title="Feb" data-value="2">Feb</a></li>
+            <li><a href="#" title="Mar" data-value="3">Mar</a></li>
+            <li><a href="#" title="Apr" data-value="4" class="selected">Apr</a></li>
+            <li><a href="#" title="May" data-value="5">May</a></li>
+            <li><a href="#" title="Jun" data-value="6">Jun</a></li>
+            <li><a href="#" title="Jul" data-value="7">Jul</a></li>
+            <li><a href="#" title="Aug" data-value="8">Aug</a></li>
+            <li><a href="#" title="Sep" data-value="9" >Sep</a></li>
+            <li><a href="#" title="Oct" data-value="10">Oct</a></li>
+            <li><a href="#" title="Nov" data-value="11">Nov</a></li>
+            <li><a href="#" title="Dec" data-value="12">Dec</a></li>
+          </ul>
+          <div class="clearfix"></div>
+          <ul class="weekday">
+            <li><a href="#" title="Mon" data-value="1">Mon</a></li>
+            <li><a href="#" title="Tue" data-value="2">Tue</a></li>
+            <li><a href="#" title="Wed" data-value="3">Wed</a></li>
+            <li><a href="#" title="Thu" data-value="4">Thu</a></li>
+            <li><a href="#" title="Fri" data-value="5">Fri</a></li>
+            <li><a href="#" title="Say" data-value="6">Sat</a></li>
+            <li><a href="#" title="Sun" data-value="7">Sun</a></li>
+          </ul>
+          <div class="clearfix"></div>
+          <ul class="days">
+            <script>
+              for( var _i = 1; _i <= 31; _i += 1 ){
+                var _addClass = '';
+                if( _i === 12 ){ _addClass = ' class="selected"'; }
+                
+                switch( _i ){
+                  case 8:
+                  case 10:
+                  case 27:
+                    _addClass = ' class="event"';
+                  break;
+                }
+
+                document.write( '<li><a href="#" title="'+_i+'" data-value="'+_i+'"'+_addClass+'>'+_i+'</a></li>' );
+              }
+            </script>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+
+    </div>
